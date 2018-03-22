@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/his_bkg_deep">
+
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="8">
+            <!--历史天空左侧菜单栏-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:weightSum="9"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:background="@drawable/his_sky_bck"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7"
+                    android:weightSum="5">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent" />
+                    <!--全部-->
+                    <LinearLayout
+                        android:id="@+id/all_backgroud"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:padding="50dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/history_all"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/history_all"/>
+                    </LinearLayout>
+                    <!--名人故居-->
+                    <LinearLayout
+                        android:id="@+id/place_backgroud"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:padding="45dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/history_place"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/history_place"/>
+                    </LinearLayout>
+                    <!--风景名胜-->
+                    <LinearLayout
+                        android:id="@+id/scenery_background"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:padding="45dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/history_scenery"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/hitstory_scenery"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/transparent" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/today_history"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/today_history"/>
+            </LinearLayout>
+
+            <GridView
+                android:layout_margin="50dp"
+                android:id="@+id/oldpic_gridview"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="15dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/his_back"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back_button"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

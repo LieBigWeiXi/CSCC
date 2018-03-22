@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:weightSum="7"
+    android:padding="20dp">
+
+    <!--主界面标题栏布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="270dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/logo" />
+        <RelativeLayout
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="2018 / 1 / 20"
+                android:textColor="#fff"
+                android:textSize="15dp" />
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="今日"
+                    android:textColor="#fff"
+                    android:textSize="15dp" />
+                <ImageView
+                    android:id="@+id/today_weatherIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/sun" />
+                <TextView
+                    android:id="@+id/today_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="晴"
+                    android:textColor="#fff"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/today_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="0/0 ℃"
+                    android:textColor="#FBE7E8ED"
+                    android:textSize="12dp" />
+                <ImageView
+                    android:id="@+id/split_Icon"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/split_icno" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="明日"
+                    android:textColor="#fff"
+                    android:textSize="15dp" />
+                <ImageView
+                    android:id="@+id/tomorrow_weatherIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/sun" />
+
+                <TextView
+                    android:id="@+id/tomorrow_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="晴"
+                    android:textColor="#fff"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/tomorrow_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="0/0 ℃"
+                    android:textColor="#FBE7E8ED"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout><!--主界面标题栏布局-->
+
+     <!--主界面布局-->
+    <LinearLayout
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+        <!--左侧布局2/7-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/iv_his"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/his" />
+            <ImageView
+                android:id="@+id/iv_cul"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/cul" />
+        </LinearLayout> <!--主界面左侧布局-->
+
+        <!--主界面中间布局3/7-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:weightSum="3">
+            <ImageView
+                android:id="@+id/iv_prop"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/prop" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3">
+                <ImageView
+                    android:id="@+id/introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/introduce" />
+                <ImageView
+                    android:id="@+id/qrcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/research" />
+                <ImageView
+                    android:id="@+id/contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/contact" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--主界面右侧布局2/7-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:weightSum="2">
+            <ImageView
+                android:id="@+id/iv_pano"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/pano" />
+            <ImageView
+                android:id="@+id/iv_vod"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/vod" />
+        </LinearLayout>
+    </LinearLayout><!--主界面布局-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

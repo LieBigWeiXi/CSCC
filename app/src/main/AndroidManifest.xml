@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.atlas.cscc20">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.MenuActivity" />
+        <activity android:name=".Activity.BaseActivity" />
+        <activity android:name=".Activity.PlayActivity" />
+        <activity android:name=".Activity.HistoryPlayActivity" />
+        <activity android:name=".Activity.PanoItemActivity" />
+        <activity android:name=".Activity.CulActivity" />
+        <activity android:name=".Activity.VodActivity" />
+        <activity android:name=".Activity.VodInfoActivity" />
+        <activity android:name=".Activity.HistoryActivity"/>
+        <activity android:name=".Activity.contact" />
+        <activity android:name=".Activity.Introduce" />
+        <activity android:name=".Activity.eqcode" />
+        <activity android:name=".Activity.Today_History"/>
+
+    </application>
+
+</manifest>
